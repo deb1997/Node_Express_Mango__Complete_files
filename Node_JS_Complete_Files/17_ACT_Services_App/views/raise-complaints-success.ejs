@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/font-awesome-5.8.2.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/mdb.css">
+    <title>ACT Services App</title>
+</head>
+<body>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-danger">
+    <a class="navbar-brand" href="/">ACT Services</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/raise">Raise Complaints</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/list">List of Complaints</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Intro Section -->
+<div class="jumbotron">
+    <h1 class="display-4 text-danger">Thanks for Your Complaint Mr/Mrs:
+        <span class="font-weight-bold"><%= complaint.username %></span>
+    </h1>
+    <p class="lead">We are Working on the issue, Our Service Person get back to you on your Email Id:
+        <span class="font-weight-bold text-danger"> <%= complaint.email %></span>
+    </p>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa et nobis. A aperiam at atque autem consectetur cupiditate deleniti dolor doloremque eos ex expedita fugiat illo illum in labore laborum, neque non nostrum odio omnis porro possimus quaerat quibusdam repellat rerum sunt tempora ullam velit veniam veritatis, vero voluptate.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <a class="btn btn-danger btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+<!-- Main Footer -->
+<footer class="p-3 bg-danger text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright &copy; 2019 , Act Services</h3>
+                <h6>All Rights Reserved</h6>
+                <h6>Developed & Maintained by ACT Services</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="../public/js/jquery-3.4.0.min.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+<script src="../public/js/mdb.js"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 1000
+    })
+</script>
+</body>
+</html>

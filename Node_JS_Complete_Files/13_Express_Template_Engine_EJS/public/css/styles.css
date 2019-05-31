@@ -1,0 +1,13 @@
+.bg-black-red{
+    background: linear-gradient(45deg,black,red);
+}
+.btn-black-red{
+    background: linear-gradient(45deg,black,red) !important;
+    color: white;
+}
+.text-dark-red{
+    color: darkred;
+}
+.table{
+    box-shadow: 0 0 5px darkred;
+}

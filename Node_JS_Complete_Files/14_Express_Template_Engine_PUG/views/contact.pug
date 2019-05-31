@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.2/css/all.css', integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay', crossorigin='anonymous')
+    link(rel='stylesheet', href='../public/css/font-awesome-5.8.2.css')
+    link(rel='stylesheet', href='../public/css/bootstrap.css')
+    link(rel='stylesheet', href='../public/css/mdb.css')
+    link(rel='stylesheet', href='../public/css/styles.css')
+    title Express PUG
+  body
+    // Main Navbar
+    nav.navbar.navbar-expand-md.navbar-dark.bg-black-red
+      a.navbar-brand(href='/') Express PUG
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='/') Home
+          li.nav-item
+            a.nav-link(href='/about') About Us
+          li.nav-item
+            a.nav-link(href='/contact') Contact Us
+          li.nav-item
+            a.nav-link(href='/profile') Profile
+          li.nav-item
+            a.nav-link(href='/services') Services
+    // Home Page Main Content
+    .jumbotron
+      h1.display-4.text-dark-red #{pageTitle}
+      p.lead
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid architecto aspernatur atque blanditiis culpa delectus ducimus earum eligendi ex expedita impedit ipsum libero magni modi molestiae nam nobis nostrum nulla quaerat quasi quibusdam quisquam repellat vero vitae, voluptatibus. At illum libero magnam officiis quia quos reprehenderit sint tempora.
+
+      // Feed back Form
+      section.p-3
+        .container
+          .row
+            .col-md-6.m-auto
+              .card
+                .card-header.bg-black-red.text-white.text-center
+                  h3 Contact Form
+                .card-body.bg-light
+                  form(action='/contact-form', method='post')
+                    .form-group
+                      input.form-control(name='username', type='text', placeholder='Your Name')
+                    .form-group
+                      input.form-control(name='email', type='email', placeholder='Your Email')
+                    .form-group
+                      input.form-control(name='subject', type='text', placeholder='Your Subject')
+                    .form-group
+                      textarea.form-control(name='description', rows='4', placeholder='Description')
+                    .text-center
+                      input.btn.btn-black-red(type='submit', value='Submit')
+
+
+      p.lead
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid architecto aspernatur atque blanditiis culpa delectus ducimus earum eligendi ex expedita impedit ipsum libero magni modi molestiae nam nobis nostrum nulla quaerat quasi quibusdam quisquam repellat vero vitae, voluptatibus. At illum libero magnam officiis quia quos reprehenderit sint tempora.
+      p.lead
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aliquid architecto aspernatur atque blanditiis culpa delectus ducimus earum eligendi ex expedita impedit ipsum libero magni modi molestiae nam nobis nostrum nulla quaerat quasi quibusdam quisquam repellat vero vitae, voluptatibus. At illum libero magnam officiis quia quos reprehenderit sint tempora.
+      hr.my-4
+      p
+        | It uses utility classes for typography and spacing to space content out within the larger container.
+      a.btn.btn-black-red.btn-lg(href='#', role='button') Learn more
+    // Main Footer
+    footer.p-3.bg-black-red.text-white.text-center
+      .container
+        .row
+          .col
+            h3 Copyright © 2019 Express EJS
+            h6 All Rights Reserved
+            h6 Developed & Maintained by Express EJS Inc.
+    // Scripts
+    script(src='../public/js/jquery-3.4.0.min.js')
+    script(src='../public/js/popper.min.js')
+    script(src='../public/js/bootstrap.js')
+    script(src='../public/js/mdb.js')
